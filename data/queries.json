@@ -1,0 +1,10 @@
+[
+  {"id":"q1","query":"worker lease crash recovery","relevant":{"queue-leases":3,"sqlite-transactions":1}},
+  {"id":"q2","query":"retry failed background jobs","relevant":{"queue-retries":3,"queue-leases":1}},
+  {"id":"q3","query":"deduplicate API submissions with idempotency key","relevant":{"idempotency":3}},
+  {"id":"q4","query":"search ranking evaluation recall relevance","relevant":{"retrieval-evaluation":3,"retrieval-limits":1}},
+  {"id":"q5","query":"cloud credentials secret permissions","relevant":{"cloud-secrets":3}},
+  {"id":"q6","query":"container durable state volume filesystem","relevant":{"cloud-state":3,"sqlite-transactions":1}},
+  {"id":"q7","query":"keyboard accessible frontend focus labels","relevant":{"frontend-accessibility":3}},
+  {"id":"q8","query":"HTTP p95 latency performance budgets","relevant":{"har-analysis":3}}
+]

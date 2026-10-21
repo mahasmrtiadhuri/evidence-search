@@ -1,1 +1,14 @@
-
+[
+  {"id":"queue-leases","text":"A worker claims a background job using a lease token. An expired lease allows crash recovery. A stale worker cannot acknowledge a job after its lease expires."},
+  {"id":"queue-retries","text":"Failed background jobs retry with exponential backoff. Exhausted attempts enter a dead letter state. Operators can inspect error events and retry dead jobs manually."},
+  {"id":"idempotency","text":"An idempotency key deduplicates repeated API submissions. A matching payload returns the existing job. Reusing a key with a different payload returns a conflict."},
+  {"id":"sqlite-transactions","text":"SQLite immediate transactions serialize writers. A transaction atomically selects and updates a job. WAL permits readers while another connection writes."},
+  {"id":"retrieval-evaluation","text":"Evaluate search ranking with recall, mean reciprocal rank and normalized discounted cumulative gain. Relevance judgments assign graded labels to query document pairs."},
+  {"id":"bm25","text":"BM25 is a lexical search ranking function with term frequency saturation and document length normalization. Inverse document frequency downweights common terms."},
+  {"id":"tfidf","text":"TF-IDF weights words using term frequency and inverse document frequency. Cosine similarity compares query vectors to document vectors in a shared vocabulary."},
+  {"id":"cloud-secrets","text":"Keep cloud credentials out of version control. Use a secret manager and restrict service permissions. Rotate credentials when exposed and avoid logging access tokens."},
+  {"id":"cloud-state","text":"A container filesystem is ephemeral. Persist durable application state on a volume. SQLite requires a local filesystem rather than a shared network filesystem for WAL."},
+  {"id":"frontend-accessibility","text":"An accessible frontend uses semantic HTML, keyboard navigation, visible focus, labels and status announcements. Error messages should help users recover."},
+  {"id":"har-analysis","text":"A HAR capture records HTTP requests and latency. Aggregate API routes and inspect p50 and p95 latency, failed requests and sample counts before setting performance budgets."},
+  {"id":"retrieval-limits","text":"Lexical retrieval cannot reliably match synonyms without overlapping terms. A semantic embedding retriever is a useful comparison baseline. Tune on development queries and reserve a held out test set."}
+]
